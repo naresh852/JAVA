@@ -1,0 +1,22 @@
+class robot{
+	public void speak(String text) {
+		System.out.println(text);
+	}
+	public void jump(int num) {
+		System.out.println("iam jumping in "+num);
+	}
+	public void move(String direction,int meters) {
+		System.out.println("moving "+meters+ " meters in "+direction+" direction");
+	}
+}
+public class app {
+         public static void main(String [] args) {
+     	 robot sam = new robot();
+     	 sam.speak("hello robot hw r u");
+     	 sam.jump(4);
+     	 sam.move("northeast",400);
+     	 String dir = "west";
+     	 int met = 200;
+     	 sam.move(dir,met);
+         }
+}
